@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartridge</title>
+
+    <!-- Google Font (you can change later) -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Anton', sans-serif;
+            background: #111;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 50px;
+            background: black;
+        }
+
+        header h1 {
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: url('https://images.unsplash.com/photo-1523381210434-271e8be1f52b') no-repeat center/cover;
+        }
+
+        .hero h2 {
+            font-size: 60px;
+            background: rgba(0,0,0,0.6);
+            padding: 20px;
+        }
+
+        .products {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .products h2 {
+            margin-bottom: 30px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: white;
+            color: black;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: black;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>CARTRIDGE</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>NO LIMITS</h2>
+    </section>
+
+    <section class="products">
+        <h2>Featured Drops</h2>
+
+        <div class="product-grid">
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf" alt="">
+                <h3>Black Tee</h3>
+                <p>R299</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" alt="">
+                <h3>White Tee</h3>
+                <p>R299</p>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Cartridge. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+  
